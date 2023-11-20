@@ -6,7 +6,11 @@ int main()
     int i=0;
     for(i=0;i<4;i++)
     {
-        printf("?");
+        for(=0;i<3;i++)
+        {
+        printf("#");
+        }
+        printf("\n");
     }
-    printf("\n");
+
 }

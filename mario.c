@@ -3,9 +3,13 @@
 
 int main()
 {
-    int i,j;
-    int n=get_int("size=");
-    
+    int i,j,n;
+    do
+    {
+    n=get_int("size=");
+    }
+    while(n<1);
+
     for(i=0;i<n;i++)
     {
         for(j=0;j<n;j++)

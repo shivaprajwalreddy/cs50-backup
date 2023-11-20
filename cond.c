@@ -4,11 +4,11 @@
 int main(void)
 {
     int q;
-    
+    int x,y;
     for(q=0;q<3;q++)
     {
-    int x= get_int("x value?\n");
-    int y= get_int("y value?\n");
+    x= get_int("x value?\n");
+    y= get_int("y value?\n");
 
 
 

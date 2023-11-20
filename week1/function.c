@@ -12,17 +12,19 @@ int main(void)
 
 int get_size(void)
 {
- int i,j;
+    int n;
     do
     {
     n=get_int("size=");
     }
     while(n<1);
+    return n;
 }
 
 int print(void)
 {
-for(i=0;i<n;i++)
+    int i,j;
+    for(i=0;i<n;i++)
     {
         for(j=0;j<n;j++)
         {

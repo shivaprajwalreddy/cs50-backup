@@ -5,5 +5,5 @@ int main()
 {
     int a;
     printf("a=\n");
-    scanf("%)
+    scanf("%d"&a);
 }

@@ -9,7 +9,7 @@ int main(void)
     {
     int x= get_int("x value?\n");
     int y= get_int("y value?\n");
-    }
+
 
 
     if (x>y)
@@ -26,6 +26,6 @@ int main(void)
     {
         printf("x is equal to y\n");
     }
-
+    }
 
 }

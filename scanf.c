@@ -5,5 +5,5 @@ int main()
 {
     string name;
     printf("name?\n");
-    scanf("%s",name);
+    scanf("%s"&name);
 }

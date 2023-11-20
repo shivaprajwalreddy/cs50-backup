@@ -2,7 +2,7 @@
 #include <cs50.h>
 
 int get_size(void);
-int print(void);
+void print(int n);
 int main(void)
 {
     int n = get_size();

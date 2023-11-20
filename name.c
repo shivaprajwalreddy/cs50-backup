@@ -4,6 +4,6 @@
 int main()
 {
     string name = get_string("what is your name\n");
-    string last_name = get_string("what is your second name\n");
-    printf("hello %s%s\n",name,last_name);
+    string sur_name = get_string("what is your surname\n");
+    printf("hello %s%s\n",sur_name ,name);
 }

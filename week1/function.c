@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <cs50.h>
 
-int main()
+int main(void)
 {
-    int get_size();
+    int n = get_size();
 
-    int print();
+    int print(n);
 }
 
 
@@ -49,23 +49,9 @@ int main()
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-int get_size();
+int get_size(void)
 {
- int i,j,n;
+ int i,j;
     do
     {
     n=get_int("size=");
@@ -73,7 +59,7 @@ int get_size();
     while(n<1);
 }
 
-int print();
+int print(void)
 {
 for(i=0;i<n;i++)
     {

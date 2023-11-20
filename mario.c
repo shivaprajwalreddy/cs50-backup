@@ -3,10 +3,10 @@
 
 int main()
 {
-    int i,j;
-    for(i=0;i<4;i++)
+    int i,j,n=5;
+    for(i=0;i<n;i++)
     {
-        for(j=0;j<3;j++)
+        for(j=0;j<n;j++)
         {
         printf("#");
         }

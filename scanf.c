@@ -3,7 +3,7 @@
 
 int main()
 {
-    string name[10];
-    printf("name?\n");
-    scanf("%s"&name);
+    int a;
+    printf("a=\n");
+    scanf("%)
 }

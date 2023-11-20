@@ -1,3 +1,3 @@
 a= bihari
-print (a)
+print ("a")
 

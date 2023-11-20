@@ -7,23 +7,18 @@ int main(void)
     int x,y;
 
     for(q=0;q<3;q++)
-
     {
     x= get_int("x value?\n");
     y= get_int("y value?\n");
 
     if (x>y)
-
     {
         printf(" x is greater than y\n");
-
     }
 
     else if(x<y)
-
     {
         printf("x is less than y\n");
-
     }
 
     else

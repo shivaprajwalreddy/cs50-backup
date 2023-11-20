@@ -1,1 +1,3 @@
-print("abhilash is bihari")
+a= bihari
+print (a)
+

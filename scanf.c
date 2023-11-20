@@ -5,5 +5,5 @@ int main()
 {
     int a;
     printf("a=\n");
-    scanf("%d"&a);
+    scanf("%d",&a);
 }

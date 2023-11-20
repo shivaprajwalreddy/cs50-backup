@@ -8,6 +8,6 @@ int main(void)
     int y= get_int("y value?\n");
     if (x>y)
     {
-        printf(" x is greater than y");
+        printf(" x is greater than y\n");
     }
 }

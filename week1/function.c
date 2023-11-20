@@ -1,53 +1,14 @@
 #include <stdio.h>
 #include <cs50.h>
 
+int get_size(void);
+int print(void);
 int main(void)
 {
     int n = get_size();
 
     int print(n);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 int get_size(void)
 {

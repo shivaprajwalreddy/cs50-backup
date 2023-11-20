@@ -7,6 +7,7 @@ int main()
     while (c<3)
     {
         printf("meow\n");
+        c++;
         
     }
 }

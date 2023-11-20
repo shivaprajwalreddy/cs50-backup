@@ -10,7 +10,7 @@ int main(void)
     print(n);
 }
 
-int get_size(void)
+void get_size(int n)
 {
     int n;
     do

@@ -1,2 +1,3 @@
-a="hello"
-print(a)
+#a="hello"
+#print(a)
+print('abhilash you )

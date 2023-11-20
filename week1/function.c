@@ -7,7 +7,7 @@ int main(void)
 {
     int n = get_size();
 
-    int print(n);
+    print(n);
 }
 
 int get_size(void)

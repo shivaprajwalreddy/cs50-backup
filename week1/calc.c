@@ -3,9 +3,9 @@
 
 int main()
 {
-    int a= get_int("value of a?\n");
-    int b=get_int("value of b?\n");
-    int c=a+b;
-    printf("add=%d\n",c);
+    long a= get_int("value of a?\n");
+    long b=get_int("value of b?\n");
+    long c=a+b;
+    printf("add=%ld\n",c);
 }
 

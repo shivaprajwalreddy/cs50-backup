@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <>
+#include <cs50.h>
 
 int main()
 {
@@ -10,7 +10,7 @@ int main()
     {
         size=get_int("population size:\n");
     }
-    while(size>0)
+    while(size<10);
 
 
 }

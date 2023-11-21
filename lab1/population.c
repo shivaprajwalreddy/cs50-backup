@@ -16,7 +16,7 @@ int main()
     {
         size2=get_int("ending population size:\n");
     }
-    while(size1<size2);
+    while(size2<size1);
 
 
 }

@@ -3,7 +3,7 @@
 
 int main()
 {
-    int size1,size2;
+    int size1,size2,years;
 
 
     do

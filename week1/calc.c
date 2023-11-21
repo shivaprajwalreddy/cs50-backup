@@ -8,3 +8,4 @@ int main()
     int c=a+b;
     printf("add=%d\n",c);
 }
+

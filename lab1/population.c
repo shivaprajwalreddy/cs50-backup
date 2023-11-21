@@ -3,14 +3,20 @@
 
 int main()
 {
-    int size;
+    int size1,size2;
 
 
     do
     {
-        size=get_int("population size:\n");
+        size1=get_int("starting population size:\n");
     }
-    while(size<10);
+    while(size1<10);
+
+    do
+    {
+        size2=get_int("ending population size:\n");
+    }
+    while(size2<size1);
 
 
 }

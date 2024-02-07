@@ -4,10 +4,11 @@
 int main()
 {
     int c=0;
-    while (c<3)
+    while (c<n)
     {
+        int n=get_int("what is n?\n");
         printf("meow\n");
         c++;
-        
+
     }
 }

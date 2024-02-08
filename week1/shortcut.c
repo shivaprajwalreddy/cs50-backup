@@ -1,14 +1,14 @@
-cd
+cd  -> change directory
 
-cp
+cp  -> copy
 
 ls ->  list
 
-mkdir
+mkdir  -> make directory
 
 mv ->  move
 
 rm  ->  remove
 
-rmdir
+rmdir  -> remove directory
 

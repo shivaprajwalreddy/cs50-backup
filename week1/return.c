@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <cs50.h>
 
+int add(int a,int b);
+
 int main()
 {
     int x=get_int("what is x\n");

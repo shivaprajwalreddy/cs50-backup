@@ -2,13 +2,13 @@ cd
 
 cp
 
-ls
+ls ->  list
 
 mkdir
 
-mv
+mv ->  move
 
-rm
+rm  ->  remove
 
 rmdir
 

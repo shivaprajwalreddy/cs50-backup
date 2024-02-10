@@ -20,7 +20,7 @@ int main(void)
 
 void print_row(int length)
 {
-    for (int k = 0; k < length; k++)
+    for (int k = length-1; k > length; k--)
     {
         printf(" ");
     }

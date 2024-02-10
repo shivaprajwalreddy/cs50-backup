@@ -14,9 +14,9 @@ int main(void)
 
     for (int i = 0; i < n; i++)
     {
-        for (int k = n-i; k > 1; k--)
+        for (int k = n - i; k > 1; k--)
         {
-        printf(" ");
+            printf(" ");
         }
         print_row(i + 1);
     }

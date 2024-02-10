@@ -19,6 +19,8 @@ int main(void)
             printf(" ");
         }
         print_row(i + 1);
+        printf(" ");
+        print_row(i + 1);
     }
 }
 

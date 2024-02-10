@@ -18,7 +18,7 @@ int main(void)
     }
 }
 
-void print_row(int length)
+void print_row(int spaces, int bricks)
 {
     for (int j = 0; j < length; j++)
     {

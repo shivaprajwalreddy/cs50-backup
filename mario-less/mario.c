@@ -20,5 +20,9 @@ int main(void)
 
 void print_row(int length)
 {
-    printf("#");
+    for (int i = 0; i < length; i++)
+    {
+        printf("#");
+    }
+    printf("\n");
 }

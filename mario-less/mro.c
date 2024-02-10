@@ -13,6 +13,10 @@ int main(void)
     while(n<1);
     for(int i = 0; i < n; i++)
     {
+        for(int k = n-i; k > 1; k--)
+        {
+            printf(" ");
+        }
         row(i + 1);
     }
 }

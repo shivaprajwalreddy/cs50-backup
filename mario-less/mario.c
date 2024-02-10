@@ -18,7 +18,7 @@ int main(void)
         {
             printf(" ");
         }
-
+        print_row(i + 1);
     }
 }
 
@@ -28,5 +28,5 @@ void print_row(int length)
     {
         printf("#");
     }
-
+    printf("\n");
 }

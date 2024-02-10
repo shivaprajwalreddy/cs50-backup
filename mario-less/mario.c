@@ -19,7 +19,10 @@ int main(void)
             printf(" ");
         }
         print_row(i + 1);
-        printf(" ");
+        for (int l = n + 1; l > 1; l--)
+        {
+            printf(" ");
+        }
         print_row(i + 1);
     }
 }

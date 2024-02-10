@@ -14,7 +14,7 @@ int main(void)
 
     for (int i = 0; i < n; i++)
     {
-        for (int k = n-1; k > 0; k--)
+        for (int k = n-i; k > 0; k--)
         {
         printf(" ");
         }

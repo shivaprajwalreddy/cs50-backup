@@ -10,3 +10,8 @@ int main(void)
     }
     while (n < 1);
 }
+
+void print_row(int length)
+{
+    
+}

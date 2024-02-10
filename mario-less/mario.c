@@ -11,7 +11,10 @@ int main(void)
         n = get_int("Height: ");
     }
     while (n < 1);
+    for(int i=0; i<n; i++)
+    {
     print_row(n);
+    }
 }
 
 void print_row(int length)
@@ -20,4 +23,5 @@ void print_row(int length)
     {
         printf("#");
     }
+    printf("\n");
 }

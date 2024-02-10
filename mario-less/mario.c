@@ -13,7 +13,7 @@ int main(void)
     while (n < 1);
     for(int i=0; i<n; i++)
     {
-    print_row(n);
+    print_row(i+1);
     }
 }
 

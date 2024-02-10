@@ -31,5 +31,4 @@ void print_row(int length)
     {
         printf("#");
     }
-
 }

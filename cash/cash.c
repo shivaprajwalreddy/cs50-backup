@@ -11,4 +11,4 @@ int main(void)
     while(n<1);
 }
 
-int calc_
+int calc_quaters(int )

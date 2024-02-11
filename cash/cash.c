@@ -16,7 +16,7 @@ int main(void)
 
     cents = cents - (quaters * 25);
 
-    printf("%i",cents);
+    printf("%i\n",cents);
 }
 
 int calc_quaters(int cents)

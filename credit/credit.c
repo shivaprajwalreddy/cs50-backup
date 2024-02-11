@@ -7,4 +7,4 @@ int main(void)
     number = get_int("number: ");
 }
 
-
+int checksum(int number)

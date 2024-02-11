@@ -8,5 +8,7 @@ int main(void)
     {
         n = get_int("owed: ");
     }
-    while(n<0);
+    while(n<1);
 }
+
+int calc_

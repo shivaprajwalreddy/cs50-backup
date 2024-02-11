@@ -50,15 +50,36 @@ int calc_quaters(int cents)
 
 int calc_dime(int cents)
 {
+    int dime = 0;
+    while(dime >= 10)
+    {
+        dime++;
+        cents = cents - 10;
+    }
+    return dime;
 
 }
 
 int calc_nickel(int cents)
 {
+    int nickel = 0;
+    while(nickel >= 5)
+    {
+        nickel++;
+        cents = cents - 5;
+    }
+    return nickel;
 
 }
 
 int calc_penny(int cents)
 {
+    int penny = 0;
+    while(cents >= 1)
+    {
+        penny++;
+        cents = cents - 1;
+    }
+    return penny;
 
 }

@@ -8,3 +8,11 @@ int main(void)
 }
 
 int checksum(int number)
+{
+    // checksum for valid or invalid
+}
+
+int amex(int number)
+{
+    // 
+}

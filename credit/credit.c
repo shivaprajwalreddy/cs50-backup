@@ -4,10 +4,10 @@
 int main(void)
 {
     long number;
-    number = get_int("number: ");
+    number = get_long("number: ");
 }
 
-int checksum(int number)
+void checksum(int number)
 {
     // checksum for valid or invalid
 }

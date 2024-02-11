@@ -4,5 +4,7 @@
 int main(void)
 {
     long number;
-    
+    number = get_int("number: ");
 }
+
+

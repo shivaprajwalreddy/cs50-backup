@@ -12,7 +12,17 @@ int checksum(int number)
     // checksum for valid or invalid
 }
 
-int amex(int number)
+void amex(int number)
 {
-    // 
+    // whether it is american express
+}
+
+void master(int number)
+{
+    //whether it is master card
+}
+
+void visa(int number)
+{
+    //whether it is visa
 }

@@ -15,13 +15,13 @@ int main()
     printf("avg=%f\n",average(N, scores));
 }
 
-float average(int N, int scores[])
+float average(int n, int scores[])
 {
     int sum = 0;
-    for(int i = 0; i < N; i++)
+    for(int i = 0; i < n; i++)
     {
         sum += scores[i];
     }
-    return sum / (float) N;
+    return sum / (float) n;
 }
 

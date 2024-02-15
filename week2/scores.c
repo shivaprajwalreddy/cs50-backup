@@ -9,6 +9,6 @@ int main()
     {
     scores[i] = get_int("score: ");
     }
-    printf("avg=%f\n",(scores[1] + scores[2] + scores[0])/float(N));
+    printf("avg=%f\n",(scores[1] + scores[2] + scores[0])/(float)N);
 }
 

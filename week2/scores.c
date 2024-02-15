@@ -1,7 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-const int N = 3;
+int N = 3;
 
 float average(int N ,int scores[]);
 
@@ -15,13 +15,13 @@ int main()
     printf("avg=%f\n",average(N, scores));
 }
 
-float average(int n, int scores[])
+float average(int N, int scores[])
 {
     int sum = 0;
-    for(int i = 0; i < n; i++)
+    for(int i = 0; i < N; i++)
     {
         sum += scores[i];
     }
-    return sum / (float) n;
+    return sum / (float) N;
 }
 

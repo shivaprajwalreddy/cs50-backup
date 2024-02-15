@@ -22,6 +22,6 @@ float average(int n, int scores[])
     {
         sum += scores[i];
     }
-    return sum / (float) length;
+    return sum / (float) n;
 }
 

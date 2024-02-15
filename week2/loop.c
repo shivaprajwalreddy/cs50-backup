@@ -3,9 +3,8 @@
 
 int main()
 {
-    int i = 1;
     while(1)
     {
-        printf("hi");
+        printf("abhilash ");
     }
 }

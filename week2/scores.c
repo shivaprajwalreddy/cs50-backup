@@ -3,10 +3,11 @@
 
 int main()
 {
-    int scores1 = 72;
-    int scores2 = 73;
-    int scores3 = 33;
-
-    printf("avg=%i\n",(scores1 + scores2 + scores3)/3);
+    int scores[3];
+    for(int i=0; i<3; i++)
+    {
+    scores[i] = get_int("score: ");
+    }
+    printf("avg=%f\n",(scores[1] + scores[2] + scores[0])/3.0);
 }
 

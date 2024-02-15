@@ -3,11 +3,12 @@
 
 int main()
 {
-    int scores[3];
-    for(int i=0; i<3; i++)
+    const int N = 3;
+    int scores[N];
+    for(int i=0; i<N; i++)
     {
     scores[i] = get_int("score: ");
     }
-    printf("avg=%f\n",(scores[1] + scores[2] + scores[0])/3.0);
+    printf("avg=%f\n",(scores[1] + scores[2] + scores[0])/float(N));
 }
 

@@ -23,7 +23,7 @@ int calc_letters(string text)
     int letters = 0;
     for (int i = 0, length = strlen(text); i < length; i++)
     {
-        if(isalpha(text))
+        if(isalpha)
         {
             letters++;
         }

@@ -54,7 +54,7 @@ int calc_words(string text)
     int words = 0;
     for (int i = 0, length = strlen(text); i < length; i++)
     {
-        if (isblank(text[i]))
+        if (isblank(text[i]) && )
         {
             words++;
         }

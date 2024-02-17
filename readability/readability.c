@@ -22,12 +22,12 @@ int main()
     int index =  0.0588 * L - 0.296 * S - 15.8;
 
     if (index < 1)
-    (
+    {
         printf("before grade 1");
-    )
+    }
     else if (index >= 1 && index < 16)
     {
-        printf("grade %i",round(integer));
+        printf("grade %f",round(index));
     }
     else
     {

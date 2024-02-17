@@ -4,5 +4,8 @@
 
 int main()
 {
+    string player1 = get_string("player1: ");
+    string player2 = get_string("player2: ");
+
     
 }

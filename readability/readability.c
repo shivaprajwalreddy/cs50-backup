@@ -16,10 +16,11 @@ int main()
     int words = calc_words(text);
     int sentences = calc_sentences(text);
 
-    float L = (float(letters)/float(words))*100;
-    float S = (float(sentences)/float(words))*100;
+    float L = ((float)letters/(float)words)*100;
+    float S = ((float)sentences/(float)words)*100;
 
-    float index =  0.0588 * L - 0.296 * S - 15.8;
+    float index;
+    round(index) =  0.0588 * L - 0.296 * S - 15.8;
 
     if (index < 1)
     {

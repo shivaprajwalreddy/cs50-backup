@@ -27,9 +27,9 @@ int main()
     }
     else if (index >= 1 && index < 16)
     {
-        printf("grade %f",index);
+        printf("grade %f",round(index));
     }
-    else
+    else if (index > 16)
     {
         printf("grade 16+");
     }

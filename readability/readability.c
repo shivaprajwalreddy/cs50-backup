@@ -16,10 +16,12 @@ int main()
     int words = calc_words(text);
     int sentences = calc_sentences(text);
 
-    int l = (letters/words)*100;
-    int s = (sentences/words)*100;
+    int L = (letters/words)*100;
+    int S = (sentences/words)*100;
 
-    
+    int index =  0.0588 * L - 0.296 * S - 15.8;
+
+    printf("%i",index);
 }
 
 int calc_letters(string text)

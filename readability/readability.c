@@ -16,6 +16,9 @@ int main()
     int words = calc_words(text);
     int sentences = calc_sentences(text);
 
+    int l = (letters/words)*100;
+    int s = (sentences/words)*100;
+
     
 }
 

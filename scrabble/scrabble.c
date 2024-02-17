@@ -1,5 +1,5 @@
-#include <ctype.h>
 #include <cs50.h>
+#include <ctype.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -15,7 +15,7 @@ int main()
     int score1 = compute_score(player1);
     int score2 = compute_score(player2);
 
-    if(score1 > score2)
+    if (score1 > score2)
     {
         printf("player 1 wins!\n");
     }

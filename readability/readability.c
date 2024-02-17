@@ -58,8 +58,8 @@ int calc_words(string text)
         {
             words++;
         }
-        words+1;
     }
+    words++;
     return words;
 }
 

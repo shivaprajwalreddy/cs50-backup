@@ -59,6 +59,7 @@ int calc_words(string text)
             words++;
         }
     }
+    
     words++;
     return words;
 }

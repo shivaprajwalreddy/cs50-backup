@@ -19,7 +19,7 @@ int main()
     int L = (letters/words)*100;
     int S = (sentences/words)*100;
 
-    int index =  0.0588 * L - 0.296 * S - 15.8;
+    float index =  0.0588 * L - 0.296 * S - 15.8;
 
     if (index < 1)
     {
@@ -27,7 +27,7 @@ int main()
     }
     else if (index >= 1 && index < 16)
     {
-        printf("grade %f",round(index));
+        printf("grade %f",index);
     }
     else
     {

@@ -5,6 +5,8 @@
 #include <string.h>
 
 int calc_letters(string text);
+int calc_words(string text);
+int calc_sentences(string text);
 
 int main()
 {
@@ -14,7 +16,7 @@ int main()
     int words = calc_words(text);
     int sentences = calc_sentences(text);
 
-
+    
 }
 
 int calc_letters(string text)
@@ -22,7 +24,7 @@ int calc_letters(string text)
     int letters = 0;
     for (int i = 0, length = strlen(text); i < length; i++)
     {
-        if(isalpha(text[i]))
+        if (isalpha(text[i]))
         {
             letters++;
         }
@@ -35,7 +37,7 @@ int calc_words(string text)
     int words = 0;
     for (int i = 0, length = strlen(text); i < length; i++)
     {
-        if(isblank(text[i]))
+        if (isblank(text[i]))
         {
             words++;
         }
@@ -45,5 +47,13 @@ int calc_words(string text)
 
 int calc_sentences(string text)
 {
-    
+    int sentences = 0;
+    for (int i = 0, length = strlen(text); i < length; i++)
+    {
+        if (text[i] == '.' || text[i] == '?' || text[i] == '!')
+        {
+            sentences++;
+        }
+    }
+    return sentences;
 }

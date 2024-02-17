@@ -19,7 +19,7 @@ int main()
     {
         printf("player 1 wins!\n");
     }
-    if else(score2 > score1)
+    else if (score2 > score1)
     {
         printf("player 2 wins!\n");
     }
@@ -35,6 +35,14 @@ int compute_score(string word)
 
     for (int i = 0, length = strlen(word); i < length; i++)
     {
-        
+        if (isupper(word[i]))
+        {
+            score += POINTS[word[i] - 'A'];
+        }
+        else if (islower(word[i]))
+        {
+            score += POINTS[word[i] - 'a'];
+        }
     }
+    return score;
 }

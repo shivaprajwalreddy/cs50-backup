@@ -28,7 +28,7 @@ int main()
     }
     else if (index >= 1 && index < 16)
     {
-        printf("grade %f\n",index);
+        printf("grade %i\n",index);
     }
     else if (index > 16)
     {

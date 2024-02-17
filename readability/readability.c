@@ -1,5 +1,5 @@
-#include <ctype.h>
 #include <cs50.h>
+#include <ctype.h>
 #include <math.h>
 #include <stdio.h>
 #include <string.h>
@@ -16,10 +16,10 @@ int main()
     int words = calc_words(text);
     int sentences = calc_sentences(text);
 
-    float L = ((float)letters/(float)words)*100;
-    float S = ((float)sentences/(float)words)*100;
+    float L = ((float) letters / (float) words) * 100;
+    float S = ((float) sentences / (float) words) * 100;
 
-    float index =  0.0588 * L - 0.296 * S - 15.8;
+    float index = 0.0588 * L - 0.296 * S - 15.8;
     index = round(index);
 
     if (index < 1)
@@ -28,7 +28,7 @@ int main()
     }
     else if (index >= 1 && index < 16)
     {
-        printf("Grade %i\n",(int)index);
+        printf("Grade %i\n", (int) index);
     }
     else if (index > 16)
     {
@@ -54,7 +54,7 @@ int calc_words(string text)
     int words = 0;
     for (int i = 0, length = strlen(text); i < length; i++)
     {
-        if (isblank(text[i]) && text[i+1] != ' ')
+        if (isblank(text[i]) && text[i + 1] != ' ')
         {
             words++;
         }

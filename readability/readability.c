@@ -24,15 +24,15 @@ int main()
 
     if (index < 1)
     {
-        printf("before grade 1");
+        printf("Before Grade 1");
     }
     else if (index >= 1 && index < 16)
     {
-        printf("grade %i\n",(int)index);
+        printf("Grade %i\n",(int)index);
     }
     else if (index > 16)
     {
-        printf("grade 16+\n");
+        printf("Grade 16+\n");
     }
 }
 
@@ -59,7 +59,7 @@ int calc_words(string text)
             words++;
         }
     }
-    
+
     words++;
     return words;
 }

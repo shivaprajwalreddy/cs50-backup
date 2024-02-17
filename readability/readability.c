@@ -4,31 +4,38 @@
 #include <stdio.h>
 #include <string.h>
 
+int calc_letters(string text);
 
 int main()
 {
     string text = get_string("Text: ");
 
     int letters = calc_letters(text);
-    int words = calc_words(text);
-    int sentences = calc_sentences(text);
 
-    int grade = 0.0588 * L - 0.296 * S - 15.8
+    printf(" %i",letters);
+
 
 
 }
 
 int calc_letters(string text)
 {
-
+    int letters = 0;
+    for (int i = 0, length = strlen(text); i < length; i++)
+    {
+        if(isalpha(text))
+        {
+            letters++;
+        }
+    }
 }
 
-int calc_words(string text)
-{
+// int calc_words(string text)
+// {
 
-}
+// }
 
-int calc_sentences(string text)
-{
+// int calc_sentences(string text)
+// {
 
-}
+// }

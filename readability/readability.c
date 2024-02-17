@@ -21,7 +21,14 @@ int main()
 
     int index =  0.0588 * L - 0.296 * S - 15.8;
 
-    printf("%i",index);
+    if (index < 1)
+    (
+        printf("before grade 1");
+    )
+    else if (index >= 1 && index < 16)
+    {
+        for (i = 0; )
+    }
 }
 
 int calc_letters(string text)

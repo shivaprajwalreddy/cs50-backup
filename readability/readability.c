@@ -9,7 +9,7 @@ int main()
 {
     string text = get_string("Text: ");
 
-  /*  int letters = calc_letters(text);
+    int letters = calc_letters(text);
     int words = calc_words(text);
     int sentences = calc_sentences(text);
 
@@ -30,5 +30,5 @@ int calc_words(string text)
 
 int calc_sentences(string text)
 {
-*/
+
 }

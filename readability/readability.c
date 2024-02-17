@@ -10,7 +10,9 @@ int main()
 {
     string text = get_string("Text: ");
 
-    int grade = level(text);
+    int letters = calc_letters(text);
+    int words = calc_words(text);
+    int sentences = calc_sentences(text);
 
-    if
+    int grade = 0.0588 * L - 0.296 * S - 15.8
 }

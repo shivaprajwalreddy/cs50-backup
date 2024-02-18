@@ -11,14 +11,7 @@ int main (int argc, string argv[])
 {
     if (argc == 2)
     {
-        return 0;
-    }
-    else
-    {
-        printf("usage: ./caesar key\n");
-        return 1;
-    }
-    bool digit = only_digits(argv[1]);
+        bool digit = only_digits(argv[1]);
     if (digit == false)
     {
         printf("usage: ./caesar key\n");
@@ -28,6 +21,14 @@ int main (int argc, string argv[])
     {
         return 0;
     }
+        return 0;
+    }
+    else
+    {
+        printf("usage: ./caesar key\n");
+        return 1;
+    }
+
 
 }
 

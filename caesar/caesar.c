@@ -26,7 +26,7 @@ int main(int argc, string argv[])
             for (int i = 0, length = strlen(text); i < length; i++)
             {
                 char c = rotate(text[i],key);
-                printf("%i",c);
+                printf("%c",c);
             }
             printf("\n");
             return 0;
@@ -63,6 +63,10 @@ char rotate(char p, int i)
     else if(islower(p))
     {
         c = ((p - 'a')+ i) % 26;
+    }
+    else
+    {
+        c = p;
     }
     return c;
 }

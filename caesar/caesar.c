@@ -7,29 +7,27 @@
 
 bool only_digits(string argv);
 
-int main (int argc, string argv[])
+int main(int argc, string argv[])
 {
     if (argc == 2)
     {
         bool digit = only_digits(argv[1]);
-    if (digit == false)
+        if (digit == false)
+        {
+            printf("usage: ./caesar key\n");
+            return 1;
+        }
+        else
+        {
+            return 0;
+        }
+        return 0;
+    }
+    else
     {
         printf("usage: ./caesar key\n");
         return 1;
     }
-    else
-    {
-        return 0;
-    }
-        return 0;
-    }
-    else
-    {
-        printf("usage: ./caesar key\n");
-        return 1;
-    }
-
-
 }
 
 bool only_digits(string s)

@@ -4,14 +4,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main (int argv, string argv[])
+int main (int argc, string argv[])
 {
-    if (argv == 2)
+    if (argc == 2)
     {
         return 0;
     }
     else
     {
-        printf("usage ./caesar key");
+        printf("usage ./caesar key\n");
     }
 }

@@ -6,6 +6,7 @@
 #include <string.h>
 
 bool only_digits(string argv);
+char rotate(char p, int i);
 
 int main(int argc, string argv[])
 {
@@ -32,9 +33,9 @@ int main(int argc, string argv[])
     string text = get_string("plaintext:  ");
     for (int i = 0, length = strlen(text); i < length; i++)
     {
-        rotate(text[i],key);
+        char c = rotate(text[i],key);
+        printf("ciphertext: %c",c);
     }
-    string cipher =
 }
 
 bool only_digits(string s)

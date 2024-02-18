@@ -19,14 +19,14 @@ int main (int argc, string argv[])
         return 1;
     }
     bool digit = only_digits(argv[1]);
-    if (digit == true)
-    {
-        return 0;
-    }
-    else
+    if (digit == false)
     {
         printf("usage: ./caesar key\n");
         return 1;
+    }
+    else
+    {
+        return 0;
     }
 
 }

@@ -47,8 +47,8 @@ bool only_digits(string s)
 
 char rotate(char p, int i)
 {
-    if(isupper[c])
+    if(isupper(c))
     {
-        char c = ((p - 'a') + k) % 26
+        char c = ((p - 'A') + k) % 26
     }
 }

@@ -18,7 +18,7 @@ int main (int argc, string argv[])
         return 1;
     }
     bool digit = only_digits(argv[1]);
-    if (digit(true))
+    if (digit == true)
     {
         return 0;
     }
@@ -30,7 +30,17 @@ int main (int argc, string argv[])
 
 }
 
-bool only_digits(string argv)
+bool only_digits(string s)
 {
-    
+    for (i = 0, length = strlen(s); i < strlen; i++)
+    {
+        if (isdigit(argv))
+        {
+            return 1;
+        }
+        else
+        {
+            return 0;
+        }
+    }
 }

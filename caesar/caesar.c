@@ -25,8 +25,8 @@ int main(int argc, string argv[])
             printf("ciphertext: ");
             for (int i = 0, length = strlen(text); i < length; i++)
             {
-                char c = rotate(text[i],key);
-                printf("%c",c);
+                char c = rotate(text[i], key);
+                printf("%c", c);
             }
             printf("\n");
             return 0;
@@ -38,7 +38,6 @@ int main(int argc, string argv[])
         printf("usage: ./caesar key\n");
         return 1;
     }
-
 }
 
 bool only_digits(string s)
@@ -56,13 +55,13 @@ bool only_digits(string s)
 char rotate(char p, int i)
 {
     char c;
-    if(isupper(p))
+    if (isupper(p))
     {
         c = ((p - 'A') + i) % 26 + 'A';
     }
-    else if(islower(p))
+    else if (islower(p))
     {
-        c = ((p - 'a')+ i) % 26 + 'a';
+        c = ((p - 'a') + i) % 26 + 'a';
     }
     else
     {

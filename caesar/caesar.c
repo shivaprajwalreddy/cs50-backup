@@ -54,11 +54,11 @@ char rotate(char p, int i)
     char c;
     if(isupper(p))
     {
-        c = ((p - 'A') + i) % 26
+        c = ((p - 'A') + i) % 26;
     }
     if(islower(p))
     {
-        c = ((p - 'a')+ i) % 26
+        c = ((p - 'a')+ i) % 26;
     }
     return c;
 }

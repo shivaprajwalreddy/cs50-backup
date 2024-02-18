@@ -20,6 +20,13 @@ int main(int argc, string argv[])
         }
         else
         {
+            int key = atoi(argv[1]);
+            string text = get_string("plaintext:  ");
+            for (int i = 0, length = strlen(text); i < length; i++)
+            {
+                char c = rotate(text[i],key);
+                printf("ciphertext: %c",c);
+            }
             return 0;
         }
         return 0;
@@ -29,13 +36,7 @@ int main(int argc, string argv[])
         printf("usage: ./caesar key\n");
         return 1;
     }
-    int key = atoi(argv[1]);
-    string text = get_string("plaintext:  ");
-    for (int i = 0, length = strlen(text); i < length; i++)
-    {
-        char c = rotate(text[i],key);
-        printf("ciphertext: %c",c);
-    }
+
 }
 
 bool only_digits(string s)

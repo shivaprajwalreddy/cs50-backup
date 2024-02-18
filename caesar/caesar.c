@@ -30,7 +30,7 @@ int main(int argc, string argv[])
     }
     int key = atoi(argv[1])
     string text = get_string("plaintext:  ");
-    char rotate(int key,string text)
+    for (int i = 0)
 }
 
 bool only_digits(string s)
@@ -49,11 +49,11 @@ char rotate(char p, int i)
 {
     if(isupper(p))
     {
-        char c = ((p - 'A') + i) % 26
+        char c = (p + i) % 26
     }
     if(islower(p))
     {
-        char c = ((p - 'a') + i) % 26
+        char c = (p + i) % 26
     }
     return c;
 }

@@ -45,10 +45,10 @@ bool only_digits(string s)
     return true;
 }
 
-char rotate(char c, int i)
+char rotate(char p, int i)
 {
     if(isupper[c])
     {
-        c = 
+        c =
     }
 }

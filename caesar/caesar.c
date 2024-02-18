@@ -12,6 +12,8 @@ int main (int argc, string argv[])
     }
     else
     {
-        printf("usage ./caesar key\n");
+        printf("usage: ./caesar key\n");
+        return 1;
     }
+    
 }

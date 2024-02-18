@@ -34,7 +34,7 @@ int main(int argc, string argv[])
     {
         rotate(text[i],key);
     }
-    string cipher = 
+    string cipher =
 }
 
 bool only_digits(string s)
@@ -51,13 +51,14 @@ bool only_digits(string s)
 
 char rotate(char p, int i)
 {
+    char c;
     if(isupper(p))
     {
-        char c = (p + i) % 26
+        c = ((p - 'A') + i) % 26
     }
     if(islower(p))
     {
-        char c = (p + i) % 26
+        c = ((p - 'a')+ i) % 26
     }
     return c;
 }

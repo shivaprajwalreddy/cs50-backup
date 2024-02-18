@@ -28,12 +28,13 @@ int main(int argc, string argv[])
         printf("usage: ./caesar key\n");
         return 1;
     }
-    int key = atoi(argv[1])
+    int key = atoi(argv[1]);
     string text = get_string("plaintext:  ");
     for (int i = 0, length = strlen(text); i < length; i++)
     {
-        rotate(text[i],key)
+        rotate(text[i],key);
     }
+    string cipher = 
 }
 
 bool only_digits(string s)

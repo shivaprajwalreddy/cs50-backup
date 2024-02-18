@@ -28,6 +28,8 @@ int main(int argc, string argv[])
         printf("usage: ./caesar key\n");
         return 1;
     }
+    int key = atoi(argv[1])
+    
 }
 
 bool only_digits(string s)

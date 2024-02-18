@@ -60,7 +60,7 @@ char rotate(char p, int i)
     {
         c = ((p - 'A') + i) % 26;
     }
-    if(islower(p))
+    else if(islower(p))
     {
         c = ((p - 'a')+ i) % 26;
     }

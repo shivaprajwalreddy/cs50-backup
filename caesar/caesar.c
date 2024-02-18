@@ -22,10 +22,11 @@ int main(int argc, string argv[])
         {
             int key = atoi(argv[1]);
             string text = get_string("plaintext:  ");
+            printf("ciphertext: ");
             for (int i = 0, length = strlen(text); i < length; i++)
             {
                 char c = rotate(text[i],key);
-                printf("ciphertext: %c",c);
+                printf("%i",c);
             }
             printf("\n");
             return 0;

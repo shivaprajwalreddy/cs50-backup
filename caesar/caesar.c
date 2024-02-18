@@ -4,9 +4,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+bool only_digits(string argv);
+
 int main (int argc, string argv[])
 {
     if (argc == 2)
+    {
+        return 0;
+    }
+    else
+    {
+        printf("usage: ./caesar key\n");
+        return 1;
+    }
+    bool digit = only_digits(argv[1]);
+    if (digit(true))
     {
         return 0;
     }
@@ -19,3 +31,6 @@ int main (int argc, string argv[])
 }
 
 bool only_digits(string argv)
+{
+    
+}

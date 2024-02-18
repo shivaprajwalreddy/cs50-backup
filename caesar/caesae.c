@@ -7,4 +7,11 @@
 int main (int argv, string argv[])
 {
     if (argv == 2)
+    {
+        return 0;
+    }
+    else
+    {
+        printf("usage ./caesar key");
+    }
 }

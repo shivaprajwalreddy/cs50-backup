@@ -27,6 +27,7 @@ int main(int argc, string argv[])
                 char c = rotate(text[i],key);
                 printf("ciphertext: %c",c);
             }
+            printf("\n");
             return 0;
         }
         return 0;

@@ -30,9 +30,9 @@ int main(int argc, string argv[])
     }
     int key = atoi(argv[1])
     string text = get_string("plaintext:  ");
-    for (int i = 0, length = strlen(argv[1]); i < length; i++)
+    for (int i = 0, length = strlen(text); i < length; i++)
     {
-        
+        rotate(text[i],key)
     }
 }
 

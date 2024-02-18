@@ -29,7 +29,8 @@ int main(int argc, string argv[])
         return 1;
     }
     int key = atoi(argv[1])
-    
+    string text = get_string("plaintext:  ");
+    char rotate(int key,string text)
 }
 
 bool only_digits(string s)

@@ -49,6 +49,6 @@ char rotate(char p, int i)
 {
     if(isupper[c])
     {
-        c =
+        char c = ((p - 'a') + k) % 26
     }
 }

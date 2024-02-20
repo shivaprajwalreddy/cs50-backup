@@ -3,5 +3,5 @@
 
 int main()
 {
-    int numbers[] = 
+    int numbers[] = [10, 48, 86, 684, 61684, 6414, 69]
 }

@@ -3,12 +3,12 @@
 
 int main()
 {
-    int numbers[] = {10, 48, 86, 684, 61684, 6414, 69};
+    string strings[] = {"10", "48", "86", "684", "61684", "6414", "69"};
 
-    int n = get_int("number: ");
+    string n = get_string("number: ");
     for (int i = 0; i < 7; i++)
     {
-        if (numbers[i] == n)
+        if (strings[i] == n)
         {
             printf("found\n");
             return 0;

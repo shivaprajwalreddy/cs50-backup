@@ -4,8 +4,8 @@ How do you know?: it was the slowest of three but it was really fast with sorted
 
 sort2 uses: merge sort
 
-How do you know?: it was fastest of them all. and also it took same time for sorted
+How do you know?: it was fastest of them all. and also it took same time for sorted file too. so it is merge sort
 
-sort3 uses: TODO
+sort3 uses: selection sort
 
-How do you know?: TODO
+How do you know?: it took similar amount of time for all types of files. so its selection sort.

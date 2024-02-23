@@ -1,10 +1,10 @@
-sort1 uses: TODO
+sort1 uses: bubble sort
 
-How do you know?: TODO
+How do you know?: it was the slowest of three but it was really fast with sorted file. bubble takes very less time with sorted numbers. so its bubble sort.
 
-sort2 uses: TODO
+sort2 uses: merge sort
 
-How do you know?: TODO
+How do you know?: it was fastest of them all. and also it took same time for sorted
 
 sort3 uses: TODO
 

@@ -81,6 +81,15 @@ bool vote(string name)
 void print_winner(void)
 {
     // TODO
+    int max_votes = 0;
+    for (int i = 0; i < candidate_count; i++)
+    {
+        if(candidates[i].vote > max_votes)
+        {
+            max_votes = candidates[i].vote;
+        }
+    }
+
     
     return;
 }

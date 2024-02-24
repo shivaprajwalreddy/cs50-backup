@@ -65,12 +65,9 @@ int main(int argc, string argv[])
 // Update vote totals given a new vote
 bool vote(string name)
 {
-    // Debugging output
-    printf("Voting for: %s\n", name);
-
+    // TODO
     for (int i = 0; i < candidate_count; i++)
     {
-        printf("Comparing with: %s\n", candidates[i].name);
         if (strcmp(name, candidates[i].name) == 0)
         {
             candidates[i].votes++;

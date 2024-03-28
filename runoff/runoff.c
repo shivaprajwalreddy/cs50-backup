@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
 // Max voters and candidates
 #define MAX_VOTERS 100
@@ -127,6 +128,14 @@ int main(int argc, string argv[])
 bool vote(int voter, int rank, string name)
 {
     // TODO
+    for (int i = 0; i < candidate_count; i++)
+    {
+        if (strcmp(name, candidates[i].name) == 0)
+        {
+            preferences[voter][rank] = i;
+            return true;
+        }
+    }
     return false;
 }
 
@@ -134,6 +143,23 @@ bool vote(int voter, int rank, string name)
 void tabulate(void)
 {
     // TODO
+    for (int i = 0; i < candidate_count; i++)
+    {
+        if (candidates[i].eliminated == false)
+        {
+            if (preference[i][0] == 0)
+            {
+                candidates[i].vote++;
+            }
+        }
+        else (candidates[i].eliminated == true)
+        {
+            if (preference[i][1] == 1)
+            {
+                candidates[i].vote++;
+            }
+        }
+    }
     return;
 }
 
@@ -148,6 +174,7 @@ bool print_winner(void)
 int find_min(void)
 {
     // TODO
+
     return 0;
 }
 

@@ -176,7 +176,8 @@ int find_min(void)
     // TODO
     for (int i = 0; i < candidate_count; i++)
     {
-        min
+        int min = 0;
+        for 
     }
     return 0;
 }

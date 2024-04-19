@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 // Number of bytes in .wav header
-const int HEADER_SIZE = 44;
+const int header_size = 44;
 
 int main(int argc, char *argv[])
 {
@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
     // TODO: Read samples from input file and write updated data to output file
     int16_t buffer;
 
-    while(fread(&buffer, sizeof(int16_t), 1, input));
+    while(fread(&buffer, sizeof(int16_t), 1, input))
     {
 
         buffer *= factor;

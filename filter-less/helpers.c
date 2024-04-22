@@ -37,12 +37,13 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
             sepiaGreen = min(round(sepiaGreen), 255);
             sepiaBlue = min(round(sepiaBlue), 255);
 
-            
+            image[i][j].rbgtRed = sepiaRed;
+            image[i][j].rgbtGreen = sepiaGreen;
+            image[i][j].rgbtBlue = sepiaBlue;
         }
     }
     return;
 }
-
 // Reflect image horizontally
 void reflect(int height, int width, RGBTRIPLE image[height][width])
 {

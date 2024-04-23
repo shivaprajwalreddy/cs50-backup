@@ -19,7 +19,7 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
 }
 
 // Convert image to sepia
-void sepia(int height, int width, RGBTRIPLE image[height][width])
+/*void sepia(int height, int width, RGBTRIPLE image[height][width])
 {
     for (int i = 0; i < height; i++)
     {
@@ -44,7 +44,7 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
         }
     }
     return;
-}
+}*/
 // Reflect image horizontally
 void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
@@ -52,7 +52,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int j = 0; j < width / 2; j++)
         {
-            temp = image[i][width - 1 - j];
+            RGBTRIPLE temp = image[i][width - 1 - j];
             image[i][width - 1 - j] = image[i][j];
             image[i][j] = temp;
         }

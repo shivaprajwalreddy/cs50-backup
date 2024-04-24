@@ -79,8 +79,6 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                         N++;
                     }
                     float average = image[k][l].rgbtRed + image[k][l].rgbtGreen + image[k][l].rgbtBlue / N;
-
-                    
                 }
             }
         }

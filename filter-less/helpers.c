@@ -82,7 +82,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                         totalGreen += image[k][l].rgbtGreen;
                         totalBlue += image[k][l].rgbtBlue;
                     }
-            float avgRed = totalRed/N;
+                    float avgRed = totalRed/N;
             float avgGreen = totalGreen/N;
             float avgBlue = totalBlue/N;
 

@@ -93,7 +93,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             copy[i][j].rgbtBlue = round(avgBlue);
         }
     }
-    image[i][j] = copy[i][j];
+    image[height][width] = copy[height][width];
 
     return;
 }

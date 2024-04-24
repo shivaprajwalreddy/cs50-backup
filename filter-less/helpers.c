@@ -69,6 +69,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
         for (int j = 0; j < width; j++)
         {
             int N = 0;
+            float avgRed, avgGreen, avgBlue;
             copy[i][j] = image[i][j];
             for (int k = i - 1; k < i + 2; k++)
             {
@@ -77,11 +78,10 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                     if ( k >= 0 && k < height && l >= 0 && l < width)
                     {
                         N++;
+                        avgRed += 
                     }
-                    float avgRed = 
                 }
             }
-
         }
     }
 

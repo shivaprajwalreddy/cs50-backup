@@ -1,6 +1,6 @@
+#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdint.h>
 
 int main(int argc, char *argv[])
 {
@@ -32,7 +32,8 @@ int main(int argc, char *argv[])
     while (fread(buffer, 1, N, card) == N)
     {
         // Check for the beginning of a JPEG
-        if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
+        if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff &&
+            (buffer[3] & 0xf0) == 0xe0)
         {
             // If a JPEG is already open, close it
             if (img != NULL)

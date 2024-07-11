@@ -20,6 +20,7 @@ int main(int argc, char *argv[])
 
     char filename[8];
     counter = 0;
+    FILE *img = NULL;
 
     // While there's still data left to read from the memory card
     while (fread(buffer, 1, N, card) == N)

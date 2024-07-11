@@ -60,5 +60,3 @@ int main(int argc, char *argv[])
     fclose(card);
 
     return 0;
-    }
-}

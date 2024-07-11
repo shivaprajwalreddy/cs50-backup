@@ -32,5 +32,12 @@ int main(int argc, char *argv[])
             fwrite(buffer, 1, N, filename);
             counter++;
         }
+        else
+        {
+            fclose(filename);
+            FILE *img = fopen(filename, "w");
+            fwrite(buffer, 1, N, filename);
+            counter++;
+        }
     }
 }

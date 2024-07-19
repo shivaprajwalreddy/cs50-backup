@@ -57,7 +57,7 @@ bool load(const char *dictionary)
         }
 
         //copy the word into new node
-        strcpy(word, *new_node);
+        strcpy(new_node->word, word);
 
         //call hash function for hash function index
         int hash_index = hash(*word);

@@ -38,7 +38,14 @@ bool load(const char *dictionary)
     // TODO
     //open dictionary
     FILE *source = fopen(dictionary, "r");
+    if (source == NULL)
+    {
+        printf("could not open dictionary");
+        return 1;
+    }
     
+
+    fclose(source);
     return false;
 }
 

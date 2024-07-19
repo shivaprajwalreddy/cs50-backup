@@ -45,8 +45,12 @@ bool load(const char *dictionary)
     }
 
     //read strings from the file
-    char *word[45];
-    while
+    if (source != NULL)
+    {
+        char word[LENGTH];
+        fscanf(source, "%s", word);
+        
+    }
 
 
     fclose(source);

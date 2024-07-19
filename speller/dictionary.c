@@ -57,6 +57,8 @@ bool load(const char *dictionary)
             printf("insufficient memory");
             return false;
         }
+
+        //copy the word into new node
         strcpy(word, *new_node);
 
     }

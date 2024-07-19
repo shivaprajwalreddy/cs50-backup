@@ -8,8 +8,8 @@
 // Represents a node in a hash table
 typedef struct node
 {
-    
     char word[LENGTH + 1];
+    int ket;
     struct node *next;
 } node;
 
@@ -66,10 +66,11 @@ bool load(const char *dictionary)
         int hash_index = hash(*word);
 
         //insert into hash table
+        node->key = hash_index;
         node->word = new_node;
         node->next = NULL;
 
-        node->next =
+        node->next = 
 
     }
 

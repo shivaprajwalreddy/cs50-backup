@@ -46,6 +46,7 @@ bool load(const char *dictionary)
 
     //read strings from the file
     char *word;
+    
 
     fclose(source);
     return false;

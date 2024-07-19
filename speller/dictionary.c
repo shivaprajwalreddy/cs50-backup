@@ -49,8 +49,9 @@ bool load(const char *dictionary)
     {
         char word[LENGTH];
         fscanf(source, "%s", word);
-        
 
+        node *new_node = malloc(sizeof(node));
+        
     }
 
 

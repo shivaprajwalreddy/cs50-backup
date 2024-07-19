@@ -43,6 +43,8 @@ bool load(const char *dictionary)
         printf("could not open dictionary");
         return 1;
     }
+
+    //read strings from the file
     
 
     fclose(source);

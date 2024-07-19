@@ -67,7 +67,6 @@ bool load(const char *dictionary)
         //insert into hash table
         
 
-
     }
 
 

@@ -9,7 +9,6 @@
 typedef struct node
 {
     char word[LENGTH + 1];
-    int key;
     struct node *next;
 } node;
 
@@ -66,11 +65,7 @@ bool load(const char *dictionary)
         int hash_index = hash(*word);
 
         //insert into hash table
-        node->key = hash_index;
-        node->word = new_node;
-        node->next = NULL;
-
-        node->next =
+        node *table[hash_index] = *
 
     }
 

@@ -45,8 +45,9 @@ bool load(const char *dictionary)
     }
 
     //read strings from the file
-    char *word;
-    
+    char *word[45];
+    while
+
 
     fclose(source);
     return false;

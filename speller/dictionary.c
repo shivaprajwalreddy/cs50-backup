@@ -70,7 +70,7 @@ bool load(const char *dictionary)
         node->next = NULL;
 
         node->next = *new_node;
-        
+        node *table[hash_function] = node;
     }
 
 

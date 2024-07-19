@@ -68,6 +68,8 @@ bool load(const char *dictionary)
         node->word = new_node;
         node->next = NULL;
 
+        node->next = 
+
     }
 
 

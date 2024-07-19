@@ -9,7 +9,7 @@
 typedef struct node
 {
     char word[LENGTH + 1];
-    int ket;
+    int key;
     struct node *next;
 } node;
 
@@ -70,7 +70,7 @@ bool load(const char *dictionary)
         node->word = new_node;
         node->next = NULL;
 
-        node->next = 
+        node->next =
 
     }
 

@@ -50,8 +50,15 @@ bool load(const char *dictionary)
         char word[LENGTH];
         fscanf(source, "%s", word);
 
+        //create a new node
         node *new_node = malloc(sizeof(node));
+        if (new_node == NULL)
+        {
+            printf("insufficient memory");
+            return false;
+        }
         
+
     }
 
 

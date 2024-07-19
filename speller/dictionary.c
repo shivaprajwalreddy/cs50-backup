@@ -47,7 +47,7 @@ bool load(const char *dictionary)
     //read strings from the file
     if (source != NULL)
     {
-        char word[LENGTH];
+        char word[LENGTH + 1];
         fscanf(source, "%s", word);
 
         //create a new node

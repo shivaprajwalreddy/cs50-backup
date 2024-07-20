@@ -1,6 +1,8 @@
 // Implements a dictionary's functionality
 
 #include <ctype.h>
+#include <stdlib.h>
+#include <string.h>
 #include <stdbool.h>
 
 #include "dictionary.h"
@@ -67,7 +69,7 @@ bool load(const char *dictionary)
         {
             table[i] = NULL;
         }
-        
+
         new_node->next = table[hash_index];
         table[hash_index] = new_node;
     }

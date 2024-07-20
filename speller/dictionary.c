@@ -1,11 +1,11 @@
 // Implements a dictionary's functionality
 
 #include <ctype.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <strings.h>
-#include <stdbool.h>
 
 #include "dictionary.h"
 
@@ -51,22 +51,21 @@ unsigned int hash(const char *word)
         char first_letter = toupper(word[0]);
         int hash = first_letter - 'A';
         return hash;
-
     }
     else
     {
         char first_letter = toupper(word[0]);
         char second_letter = toupper(word[1]);
-        int hash = (first_letter - 'A') * 26 + second_letter -'A';
+        int hash = (first_letter - 'A') * 26 + second_letter - 'A';
         return hash;
     }
-   }
+}
 
 // Loads dictionary into memory, returning true if successful, else false
 bool load(const char *dictionary)
 {
     // TODO
-    //open dictionary
+    // open dictionary
     FILE *source = fopen(dictionary, "r");
     if (source == NULL)
     {
@@ -74,17 +73,17 @@ bool load(const char *dictionary)
         return 1;
     }
 
-    //initialize hash table
+    // initialize hash table
     for (int i = 0; i < N; i++)
     {
-            table[i] = NULL;
+        table[i] = NULL;
     }
 
-    //read strings from the file
+    // read strings from the file
     char word[LENGTH + 1];
-    while(fscanf(source, "%s", word) != EOF)
-        {
-        //create a new node
+    while (fscanf(source, "%s", word) != EOF)
+    {
+        // create a new node
         node *new_node = malloc(sizeof(node));
         if (new_node == NULL)
         {
@@ -92,21 +91,21 @@ bool load(const char *dictionary)
             return false;
         }
 
-        //copy the word into new node
+        // copy the word into new node
         strcpy(new_node->word, word);
 
-        //call hash function for hash function index
+        // call hash function for hash function index
         int hash_index = hash(word);
 
         new_node->next = table[hash_index];
         table[hash_index] = new_node;
 
-        //increment word count
+        // increment word count
         word_count++;
-        }
+    }
 
     fclose(source);
-    return(true);
+    return (true);
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded

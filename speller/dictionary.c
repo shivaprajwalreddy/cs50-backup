@@ -63,6 +63,11 @@ bool load(const char *dictionary)
         int hash_index = hash(word);
 
         //insert into hash table
+        for (int i = 0; i < N; i++)
+        {
+            table[i] = NULL;
+        }
+        
         new_node->next = table[hash_index];
         table[hash_index] = new_node;
     }

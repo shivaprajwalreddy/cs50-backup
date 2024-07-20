@@ -88,6 +88,9 @@ bool load(const char *dictionary)
 
         new_node->next = table[hash_index];
         table[hash_index] = new_node;
+
+        //increment word count
+        word_count++;
         }
 
     fclose(source);
@@ -98,7 +101,7 @@ bool load(const char *dictionary)
 unsigned int size(void)
 {
     // TODO
-    return 0;
+    return word_count;
 }
 
 // Unloads dictionary from memory, returning true if successful, else false

@@ -73,6 +73,8 @@ bool load(const char *dictionary)
 
         new_node->next = table[hash_index];
         table[hash_index] = new_node;
+
+        return true;
     }
 
 

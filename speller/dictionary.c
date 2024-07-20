@@ -35,6 +35,7 @@ unsigned int hash(const char *word)
     if (strlen(word) == 1)
     {
         toupper(word[0] - 'A');
+        
     }
     else
     {

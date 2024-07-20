@@ -47,6 +47,12 @@ bool load(const char *dictionary)
         return 1;
     }
 
+    //initialize hash table
+    for (int i = 0; i < N; i++)
+    {
+            table[i] = NULL;
+    }
+
     //read strings from the file
     char word[LENGTH + 1];
     while(fscanf(source, "%s", word) != EOF)
@@ -58,7 +64,6 @@ bool load(const char *dictionary)
             printf("insufficient memory");
             return false;
         }
-        }
 
         //copy the word into new node
         strcpy(new_node->word, word);
@@ -66,14 +71,9 @@ bool load(const char *dictionary)
         //call hash function for hash function index
         int hash_index = hash(word);
 
-        //insert into hash table
-        for (int i = 0; i < N; i++)
-        {
-            table[i] = NULL;
-        }
-
         new_node->next = table[hash_index];
         table[hash_index] = new_node;
+        }
 
     fclose(source);
     return(true);

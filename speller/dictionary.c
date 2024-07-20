@@ -27,10 +27,12 @@ unsigned int word_count = 0;
 bool check(const char *word)
 {
     // TODO
-    char *cursor = hash(word);
+    int hash_value = hash(word);
+
+    node *cursor = table[hash_value];
     while (cursor != NULL)
     {
-        if (strcasecmp (cursor, word) == 0)
+        if (strcasecmp (cursor->word, word) == 0)
         {
             return true;
         }

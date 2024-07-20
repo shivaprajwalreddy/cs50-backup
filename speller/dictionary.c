@@ -30,9 +30,9 @@ bool check(const char *word)
     char *cursor = hash(word);
     while (cursor != NULL)
     {
-        if (strcase(cursor, word) == 0)
+        if (strcasecmp (cursor, word) == 0)
         {
-            
+
         }
     }
     return false;

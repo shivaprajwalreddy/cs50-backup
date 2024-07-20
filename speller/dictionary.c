@@ -58,6 +58,7 @@ bool load(const char *dictionary)
             printf("insufficient memory");
             return false;
         }
+        }
 
         //copy the word into new node
         strcpy(new_node->word, word);
@@ -74,12 +75,8 @@ bool load(const char *dictionary)
         new_node->next = table[hash_index];
         table[hash_index] = new_node;
 
-        return true;
-    }
-
-
     fclose(source);
-    return false;
+    return(true);
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded

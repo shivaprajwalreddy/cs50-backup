@@ -28,9 +28,12 @@ bool check(const char *word)
 {
     // TODO
     char *cursor = hash(word);
-    if (cursor != NULL)
+    while (cursor != NULL)
     {
-        
+        if (strcase(cursor, word) == 0)
+        {
+            
+        }
     }
     return false;
 }

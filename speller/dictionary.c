@@ -34,12 +34,17 @@ unsigned int hash(const char *word)
     // TODO: Improve this hash function
     if (strlen(word) == 1)
     {
-        toupper(word[0] - 'A');
-        
+        first_letter = toupper(word[0]);
+        int hash = first_letter - 'A';
+        return hash;
+
     }
     else
     {
-        toupper(word[0] - 'A') * 26 + toupper(word[1]);
+        first_letter = toupper(word[0]);
+        second_letter = toupper(word[1]);
+        int hash = (first_letter - 'A') * 26 + second_letter -'A');
+        return hash;
     }
    }
 

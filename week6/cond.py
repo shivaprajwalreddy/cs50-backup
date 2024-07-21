@@ -1,5 +1,5 @@
-x = 1
-y = 2
+x = 6
+y = 5
 
 if x < y:
     print('x less than y')

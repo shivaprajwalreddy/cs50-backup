@@ -1,4 +1,4 @@
-a = input('what is x ')
-b = input('what is y ')
+a = int(input('what is x '))
+b = int(input('what is y '))
 
 print(a + b)

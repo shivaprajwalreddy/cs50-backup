@@ -1,5 +1,6 @@
 from cs50 import get_int
 
+
 def main():
     while True:
         n = get_int('height: ')
@@ -12,9 +13,11 @@ def main():
         row(i + 1)
         n -= 1
 
+
 def row(n):
     for k in range(n):
         print('#', end='')
     print()
+
 
 main()

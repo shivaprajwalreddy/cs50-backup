@@ -1,7 +1,8 @@
 from cs50 import get_int
 
-n = get_int('height: ')
-
+while true:
+    n = get_int('height: ')
+    if n > 0 
 for i in range(n - 1):
     print('#')
 

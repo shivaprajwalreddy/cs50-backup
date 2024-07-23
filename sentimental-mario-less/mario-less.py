@@ -14,6 +14,7 @@ def main():
 
 def row(n):
     for k in range(n):
-        print('#')
+        print('#', end='')
+    print()
 
 main()

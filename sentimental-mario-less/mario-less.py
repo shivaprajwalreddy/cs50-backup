@@ -4,5 +4,5 @@ while True:
     n = get_int('height: ')
     if n > 0:
         break
-for i in range(n - 1):
+for i in range(
     print('#')

@@ -10,7 +10,6 @@ def main():
         for j in range(n - 1):
             print(' ', end='')
         row(n)
-        print()
         n -= 1
 
 def row(n):

@@ -1,7 +1,8 @@
 from cs50 import get_int
 
-height = get_int('height: ')
+n = get_int('height: ')
 
-while
+for i in range(n):
+    
 
 

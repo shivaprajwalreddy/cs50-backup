@@ -6,6 +6,6 @@ while True:
         break
 
 for i in range(n):
-    for j in range(n - 1):
+    for j in reversed(range(n - 1)):
         print('#', end='')
-    
+    print()

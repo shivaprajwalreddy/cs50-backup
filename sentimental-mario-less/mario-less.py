@@ -9,11 +9,11 @@ def main():
     for i in range(n):
         for j in range(n - 1):
             print(' ', end='')
-        #row(i + 1)
+        row(i + 1)
         n -= 1
 
-"""def row(n):
-    for i in range(n):
+def row(n):
+    for k in range(n):
         print('#')
-"""
+
 main()

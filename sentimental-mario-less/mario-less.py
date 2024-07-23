@@ -12,8 +12,8 @@ def main():
         #row(i + 1)
         n -= 1
 
-#def row(n):
+"""def row(n):
     for i in range(n):
         print('#')
-
+"""
 main()

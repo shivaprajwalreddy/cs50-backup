@@ -5,7 +5,7 @@ while True:
     if change > 0:
         break
 
-quaters = int((change * 100) % 25)
+quaters = 
 
 print(f'q: {quaters}')
 

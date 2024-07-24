@@ -5,5 +5,8 @@ while True:
     if change > 0:
         break
 
-quaters = 
+quaters = change % 0.25
+
+print(f'q: {quaters}')
+
 

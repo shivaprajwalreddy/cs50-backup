@@ -11,6 +11,7 @@ while True:
     if change >= 25:
         quaters += 1
         change -= 25
+    else:
         break
 
 dime = 0

@@ -7,9 +7,11 @@ while True:
 change = change * 100
 
 quaters = 0
-if change >= 25:
-    quaters += 1
-    change -= 25
+while True:
+    if change >= 25:
+        quaters += 1
+        change -= 25
+        break
 
 dime = 0
 if change >= 10:

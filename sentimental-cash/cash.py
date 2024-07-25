@@ -15,19 +15,28 @@ while True:
         break
 
 dime = 0
-if change >= 10:
-    dime += 1
-    change -= 10
+while True:
+    if change >= 10:
+        dime += 1
+        change -= 10
+    else:
+        break
 
 nickel = 0
-if change >= 5:
-    nickel += 1
-    change -= 5
+while True:
+    if change >= 5:
+        nickel += 1
+        change -= 5
+    else:
+        break
 
 penny = 0
-if change >= 1:
-    penny += 1
-    change -= 1
+while True:
+    if change >= 1:
+        penny += 1
+        change -= 1
+    else:
+        break
 
 total = quaters + dime + nickel + penny
 

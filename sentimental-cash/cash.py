@@ -41,5 +41,3 @@ while True:
 total = quaters + dime + nickel + penny
 
 print(f'{total}')
-
-

@@ -9,6 +9,12 @@ num_words = len(words)
 
 sentences = text.count('.') + text.count('!') + text.count('?')
 
-l = avg( letters / words) * 100
+L = (letters / num_words) * 100
 
-print(f'{sentences}')
+S = (sentences / num_words) * 100
+
+grade = 0.0588 * L - 0.296 * S - 15.8
+
+round(grade)
+
+print(f'{grade}')

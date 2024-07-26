@@ -5,6 +5,10 @@ text = get_string('text: ')
 letters = sum(1 for char in text if char.isalpha())
 
 words = text.split()
-num_words = len(word)
+num_words = len(words)
 
-print(f'{words}')
+sentences = text.count('.') + text.count('!') + text.count('?')
+
+
+
+print(f'{sentences}')

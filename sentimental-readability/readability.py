@@ -9,6 +9,6 @@ num_words = len(words)
 
 sentences = text.count('.') + text.count('!') + text.count('?')
 
-l = avg( letters / 100 words)
+l = avg( letters / words) * 100
 
 print(f'{sentences}')

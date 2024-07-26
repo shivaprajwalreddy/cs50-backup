@@ -4,6 +4,7 @@ text = get_string('text: ')
 
 letters = sum(1 for char in text if char.isalpha())
 
-words = 
+word = text.split()
+words = len(word)
 
-print(f'{letters}')
+print(f'{words}')

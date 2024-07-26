@@ -20,7 +20,6 @@ grade = round(grade)
 if grade < 1:
     print('Before Grade 1')
 elif grade > 16:
-    print ('Grade 16+')
+    print('Grade 16+')
 else:
     print(f'{grade}')
-

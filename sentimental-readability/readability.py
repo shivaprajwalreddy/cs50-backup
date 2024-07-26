@@ -9,6 +9,6 @@ num_words = len(words)
 
 sentences = text.count('.') + text.count('!') + text.count('?')
 
-
+l = 
 
 print(f'{sentences}')

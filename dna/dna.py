@@ -6,7 +6,10 @@ def main():
 
     # TODO: Check for command-line usage
     n = len(sys.argv)
-    
+    if n != 3
+        print('wrong command line argument')
+        
+
 
     # TODO: Read database file into a variable
 

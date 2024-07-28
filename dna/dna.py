@@ -29,7 +29,7 @@ def main():
     n = len(reader.fieldnames)
     for i in range(n):
         longest_match(sequence, reader.fieldnames[i])
-        reader.fieldnames[i]
+        
 
 
     # TODO: Check database for matching profiles

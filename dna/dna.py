@@ -13,12 +13,12 @@ def main():
 
 
     # TODO: Read database file into a variable
-    row = []
+    rows = []
     database = sys.argv[1]
     with open(database) as file:
         reader = csv.DictReader(file)
         for row in reader:
-            row.append(row)
+            rows.append(row)
 
     # TODO: Read DNA sequence file into a variable
 

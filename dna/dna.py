@@ -21,7 +21,9 @@ def main():
             rows.append(row)
 
     # TODO: Read DNA sequence file into a variable
-    
+    with open(sys.argv[2]) as file:
+        sequence = file.read()
+
 
     # TODO: Find longest match of each STR in DNA sequence
 

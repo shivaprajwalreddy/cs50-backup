@@ -17,7 +17,7 @@ def main():
     database = sys.argv[1]
     with open(database) as file:
         reader = csv.DictReader(file)
-        print(reader.fieldnames)
+        print(reader.fieldnames[1])
         for row in reader:
             rows.append(row)
 

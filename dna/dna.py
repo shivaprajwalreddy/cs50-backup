@@ -13,6 +13,8 @@ def main():
 
 
     # TODO: Read database file into a variable
+    row = []
+    with open(')
 
     # TODO: Read DNA sequence file into a variable
 

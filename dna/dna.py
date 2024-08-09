@@ -10,6 +10,12 @@ def main():
         print('wrong command line argument')
         exit()
 
+    database = []
+    with open(sys.argv[1]) as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            database.append(row)
+
 
     # TODO: Read DNA sequence file into a variable
     with open(sys.argv[2]) as file:

@@ -35,7 +35,7 @@ def main():
     # TODO: Check database for matching profiles
     for person in database:
         match = True
-        for srt_name in str_names:
+        for str_name in str_names:
             if int(person[str_name]) != str_counts[str_name]:
                 match = False
                 break

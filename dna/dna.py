@@ -34,8 +34,10 @@ def main():
 
     # TODO: Check database for matching profiles
     for person in database:
+        print(f"Checking person: {person['name']}")
         match = True
         for str_name in str_names:
+            print(f"  {str_name}: {person[str_name]} vs {str_counts[str_name]}")
             if int(person[str_name]) != str_counts[str_name]:
                 match = False
                 break

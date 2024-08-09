@@ -26,13 +26,24 @@ def main():
 
 
     # TODO: Find longest match of each STR in DNA sequence
-    n = len(reader.fieldnames)
-    for i in range(n):
-        longest_match(sequence, reader.fieldnames[i])
-
+    str_counts = {}
+    str_names = reader.fieldnames[1:]
+    for str_name in str_names:
+        str_counts[str_name] = longest_match(sequence, str_name)
 
 
     # TODO: Check database for matching profiles
+    for person in database:
+        match = True
+        for srt_name in str_names:
+            if int(person[str_name]) != str_counts[str_name]:
+                match = False
+                break
+        if match:
+            print(person['name'])
+            return
+
+    print("no match")
 
 
 def longest_match(sequence, subsequence):

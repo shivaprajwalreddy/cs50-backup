@@ -1,0 +1,2 @@
+1.The audio is charecterized as the average energy, valence, and danceability of a listeners top 100 songs.
+2.It might not be representative of listener because they are just based on average of various songs.

@@ -1,4 +1,4 @@
-select title from movies join ratings where movies.id = ratings.movie_id where id in
+select title from movies join ratings on movies.id = ratings.movie_id where id in
 (
     select movie_id from stars where person_id in
     (

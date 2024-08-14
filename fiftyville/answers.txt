@@ -1,20 +1,11 @@
 The THIEF is:
 The city the thief ESCAPED TO:
 The ACCOMPLICE is:
-$ unzip fiftyville.zip
-Archive:  fiftyville.zip
-   creating: fiftyville/
-  inflating: fiftyville/log.sql
-  inflating: fiftyville/answers.txt
-  inflating: fiftyville/fiftyville.db
-$ rm fiftyville.zip
-rm: remove regular file 'fiftyville.zip'? y
-$ cd fiftyville
-fiftyville/ $ ;s
-bash: syntax error near unexpected token `;'
-fiftyville/ $ ls
-answers.txt  fiftyville.db  log.sql
-fiftyville/ $ sqlite3 fiftyville.db
+
+
+
+
+
 sqlite> .schema
 CREATE TABLE crime_scene_reports (
     id INTEGER,
@@ -110,4 +101,4 @@ sqlite> .tables
 airports              crime_scene_reports   people
 atm_transactions      flights               phone_calls
 bakery_security_logs  interviews
-bank_accounts         passengers   
+bank_accounts         passengers

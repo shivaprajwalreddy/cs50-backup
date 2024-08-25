@@ -37,7 +37,8 @@ h1 {
     font-size: 48px;
 }
 hr{
-    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2px;
 }
 
 button, input[type="submit"] {

@@ -30,12 +30,12 @@
                 //check free responce submission
                 document.querySelector('#check').addEventListener('click', function() {
                     let input = document.querySelector('input');
-                    if (input.value === 'Rohit Sharma'){
+                    if (input.value == 'rohit sharma'){
                         input.style.backgroundColor = 'green';
-                        document.querySelector('#feedback').innerHTML = 'correct';
+                        document.querySelector('#feedback2').innerHTML = 'correct';
                     } else {
                         input.style.backgroundColor = 'red';
-                        document.querySelector('#feedback').innerHTML = 'incorrect';
+                        document.querySelector('#feedback2').innerHTML = 'incorrect';
                     }
                 })
             })

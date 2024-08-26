@@ -34,11 +34,7 @@ body {
 
 h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: large;
-}
-hr{
-    font-family: 'Montserrat', sans-serif;
-    font-size:large;
+    font-size: 48px;
 }
 
 button, input[type="submit"] {

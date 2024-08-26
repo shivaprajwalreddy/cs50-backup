@@ -9,31 +9,39 @@
             // TODO: Add code to check answers to questions
 
             //run script once DOM is loaded
-            document.addEventListener('DOMContentLoaded', function(){
+            document.addEventListener('DOMContentLoaded', function()
+            {
 
                 //when coorect answer is clicked, change color to green
                 let correct = document.querySelector(".correct");
-                correct.addEventListener('click', function(){
+                correct.addEventListener('click', function()
+                {
                     correct.style.backgroundColor = 'green';
                     document.querySelector('#feedback1').innerHTML = 'Correct!';
-            });
+                });
 
                 //when any incorrect answer is clicked, change color to red
                 let incorrect = document.querySelectorAll(".incorrect");
-                for (let i = 0; i < incorrect.length; i++){
-                    incorrect[i].addEventListener('click', function(){
+                for (let i = 0; i < incorrect.length; i++)
+                {
+                    incorrect[i].addEventListener('click', function()
+                    {
                         incorrect[i].style.backgroundColor = 'red';
                         document.querySelector('#feedback1').innerHTML = 'Incorrect';
                     });
                 }
 
                 //check free responce submission
-                document.querySelector('#check').addEventListener('click', function() {
+                document.querySelector('#check').addEventListener('click', function()
+                 {
                     let input = document.querySelector('input');
-                    if (input.value == 'rohit sharma'){
+                    if (input.value == 'rohit sharma')
+                    {
                         input.style.backgroundColor = 'green';
                         document.querySelector('#feedback2').innerHTML = 'correct';
-                    } else {
+                    }
+                    else
+                    {
                         input.style.backgroundColor = 'red';
                         document.querySelector('#feedback2').innerHTML = 'incorrect';
                     }

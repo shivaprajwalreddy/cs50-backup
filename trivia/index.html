@@ -26,6 +26,18 @@
                         document.querySelector('#feedback1').innerHTML = 'Incorrect';
                     });
                 }
+
+                //check free responce submission
+                document.querySelector('#check').addEventListener('click', function() {
+                    let input = document.querySelector('input');
+                    if (input.value === 'Rohit Sharma'){
+                        input.style.backgroundColor = 'green';
+                        document.querySelector('#feedback').innerHTML = 'correct';
+                    } else {
+                        input.style.backgroundColor = 'red';
+                        document.querySelector('#feedback').innerHTML = 'incorrect';
+                    }
+                })
             })
 
         </script>

@@ -9,3 +9,7 @@
 .navbar.bg-primary .navbar-nav .nav-link.active[aria-current="page"] {
     color: red;
 }
+
+.edu-all{
+    padding: 20px;
+}

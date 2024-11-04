@@ -7,5 +7,5 @@
 }
 
 .navbar.bg-primary .navbar-nav .nav-link.active[aria-current="page"] {
-    color: ;
+    color: grey;
 }

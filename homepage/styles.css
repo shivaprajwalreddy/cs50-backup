@@ -1,4 +1,7 @@
-.navbar.bg-primary .navbar-nav{
+.navbar.bg-primary .navbar-nav .nav-link{
     color: white;
 }
 
+.navbar.bg-primary .navbar-nav .nav-link:hover{
+    color: grey;
+}

@@ -5,3 +5,7 @@
 .navbar.bg-primary .navbar-nav .nav-link:hover{
     color: lightgrey;
 }
+
+.navbar.bg-primary .navbar-nav .nav-link.active[aria-current="page"] {
+    color: ;
+}

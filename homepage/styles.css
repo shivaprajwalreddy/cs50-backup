@@ -13,6 +13,10 @@ body{
     height:550px;
 }
 
+#me-text{
+    padding: 20px;
+}
+
 .navbar.bg-primary .navbar-nav .nav-link{
     color: white;
 }

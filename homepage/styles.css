@@ -10,6 +10,36 @@
     color: red;
 }
 
-.edu-all{
-    padding: 20 px;
+.edu-all .edu-h2{
+    padding: 20px;
+    color: red;
+}
+
+.edu-all .edu-h3{
+    padding: 20px;
+}
+
+.me1{
+    padding: 30px;
+}
+
+.me2{
+    padding: 30px;
+    color: red;
+}
+
+.me3{
+    padding-left: 30px;
+}
+
+.contact{
+    padding: 30px;
+}
+
+.linkedin{
+    padding: 30px;
+}
+
+.email{
+    padding: 30px;
 }

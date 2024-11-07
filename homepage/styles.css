@@ -4,10 +4,10 @@ body{
 }
 
 #me{
-    padding: 0px;
+    padding: 20px;
 }
 
-#me_jpg{
+#me-jpg{
     float:left;
     width:750px;
     height:550px;

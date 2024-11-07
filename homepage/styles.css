@@ -1,3 +1,7 @@
+body{
+    backgroung-color: grey;
+}
+
 .navbar.bg-primary .navbar-nav .nav-link{
     color: white;
 }

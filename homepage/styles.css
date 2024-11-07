@@ -1,5 +1,6 @@
 body{
-    backgroung-color: grey;
+    color: white;
+    background-color: black;
 }
 
 .navbar.bg-primary .navbar-nav .nav-link{

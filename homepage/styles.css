@@ -3,7 +3,12 @@ body{
     background-color: black;
 }
 
-#
+#me{
+    padding: 20px;
+    float:left;
+    width:20px;
+    height:20px;
+}
 
 .navbar.bg-primary .navbar-nav .nav-link{
     color: white;

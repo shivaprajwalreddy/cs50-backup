@@ -4,6 +4,7 @@ body{
 }
 
 #me{
+    overflow: auto;
     padding: 20px;
 }
 
@@ -15,6 +16,7 @@ body{
 }
 
 #me-text{
+    overflow: hidden;
     padding: 20px;
 }
 
